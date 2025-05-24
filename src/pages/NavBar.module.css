@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border: 0.1rem solid red;
+    justify-content: space-between;
+}
+
+.dropdown{
+
+}
