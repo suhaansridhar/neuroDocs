@@ -10,7 +10,8 @@ export default function Login(){
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
 
-    function handleLoginForm(email, password){
+    function handleLoginForm(e){
+        e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredentials) => {
                 const user = userCredentials.user;
